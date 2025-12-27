@@ -54,14 +54,6 @@ I am a **Full Stack Web Developer** with **4 years of experience** building scal
 </div>
 
 ---
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=GodlLuffy&limit=5&theme=radical&combine_all_yearly_contributions=true)
-
----
 <div align="center">
 
 [![](https://visitcount.itsvg.in/api?id=GodlLuffy&icon=3&color=0)](https://visitcount.itsvg.in)
