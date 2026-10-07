@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Outfit:wght@400;600;800;900&amp;display=swap');
+      text {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', 'Courier New', monospace;
+      }
+    </style>
+
+    <linearGradient id="connect-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="60%" stop-color="#070c1a" />
+      <stop offset="100%" stop-color="#04060d" />
+    </linearGradient>
+
+    <linearGradient id="connect-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#14284b" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.3" />
+    </linearGradient>
+
+    <radialGradient id="connect-halo-cyan" cx="25%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="connect-halo-red" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff3366" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="connect-dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#182c4d" opacity="0.45" />
+    </pattern>
+
+    <clipPath id="connect-rounded">
+      <rect x="0" y="0" width="1200" height="520" rx="20" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#connect-rounded)">
+    <!-- Background -->
+    <rect x="0" y="0" width="1200" height="520" fill="url(#connect-bg)" />
+    <rect x="0" y="0" width="1200" height="520" fill="url(#connect-dots)" />
+    <rect x="0" y="0" width="1200" height="520" fill="url(#connect-halo-cyan)" />
+    <rect x="0" y="0" width="1200" height="520" fill="url(#connect-halo-red)" />
+
+    <!-- TOP DIVIDER -->
+    <path d="M40 70 L1160 70" stroke="#1b2e4b" stroke-width="1.5" />
+    <text x="44" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">05 // COMMUNICATIONS &amp; COLLABORATION NETWORK</text>
+    <text x="1010" y="46" font-size="11" font-weight="700" fill="#00f0ff" class="mono" letter-spacing="1.5">[ SIGNALS OPEN ]</text>
+
+    <!-- LEFT COLUMN: CALL TO ACTION -->
+    <g transform="translate(60, 110)">
+      <text x="0" y="32" font-size="46" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">LET'S</text>
+      <text x="0" y="80" font-size="46" font-weight="900" fill="#00f0ff" letter-spacing="0.5">CONNECT.</text>
+      
+      <g transform="translate(0, 120)">
+        <rect x="0" y="0" width="340" height="150" rx="14" fill="#091424" stroke="#1d3b63" stroke-width="1.5" />
+        
+        <circle cx="34" cy="36" r="14" fill="#122744" stroke="#247bff" stroke-width="1.5" />
+        <text x="28" y="41" font-size="13" font-weight="900" fill="#00f0ff">⚡</text>
+
+        <text x="60" y="34" font-size="16" font-weight="800" fill="#f0f5ff">Have a bold project?</text>
+        <text x="60" y="50" font-size="11" font-weight="700" fill="#ff3366" class="mono">OPEN FOR 2026 BUILDS</text>
+        
+        <text x="24" y="84" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+          Whether you need a high-end 3D web experience, a cross-platform mobile app, or frontend consulting — let's build something unforgettable.
+        </text>
+
+        <line x1="24" y1="116" x2="316" y2="116" stroke="#142c4c" stroke-width="1" />
+        <text x="24" y="134" font-size="10" font-weight="700" fill="#00f0ff" class="mono">
+          STATUS: INBOX MONITORED DAILY
+        </text>
+      </g>
+    </g>
+
+    <!-- RIGHT COLUMN: CONNECTION CHANNEL CARDS -->
+    <g transform="translate(480, 100)">
+      <text x="0" y="24" font-size="28" font-weight="900" fill="#f0f5ff">BUILD SOMETHING GREAT.</text>
+      <text x="0" y="46" font-size="12" font-weight="400" fill="#88a5cc" class="mono">DIRECT CHANNELS &amp; VERIFIED HANDLES</text>
+
+      <g transform="translate(0, 65)">
+        <!-- Card 1: LinkedIn -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+          
+          <!-- LinkedIn Icon -->
+          <rect x="18" y="14" width="36" height="36" rx="6" fill="#0a66c2" />
+          <text x="30" y="38" font-size="18" font-weight="900" fill="#ffffff" class="mono">in</text>
+
+          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">LinkedIn</text>
+          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">linkedin.com/in/anup-gundelwar</text>
+
+          <text x="615" y="38" font-size="20" fill="#247bff" font-weight="900">→</text>
+          <line x1="0" y1="63" x2="100" y2="63" stroke="#0a66c2" stroke-width="2" />
+        </g>
+
+        <!-- Card 2: GitHub -->
+        <g transform="translate(0, 76)">
+          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+          
+          <!-- GitHub Icon -->
+          <circle cx="36" cy="32" r="18" fill="#1b2e4b" />
+          <text x="27" y="38" font-size="16" font-weight="900" fill="#00f0ff">GH</text>
+
+          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">GitHub Profile</text>
+          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">github.com/GodlLuffy</text>
+
+          <text x="615" y="38" font-size="20" fill="#00f0ff" font-weight="900">→</text>
+          <line x1="0" y1="63" x2="100" y2="63" stroke="#00f0ff" stroke-width="2" />
+        </g>
+
+        <!-- Card 3: X / Twitter -->
+        <g transform="translate(0, 152)">
+          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+          
+          <rect x="18" y="14" width="36" height="36" rx="6" fill="#142136" />
+          <text x="31" y="38" font-size="16" font-weight="900" fill="#f0f5ff">𝕏</text>
+
+          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">X (Twitter)</text>
+          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">twitter.com/GodlLuffy</text>
+
+          <text x="615" y="38" font-size="20" fill="#ff3366" font-weight="900">→</text>
+          <line x1="0" y1="63" x2="100" y2="63" stroke="#ff3366" stroke-width="2" />
+        </g>
+
+        <!-- Card 4: Email & Collaboration -->
+        <g transform="translate(0, 228)">
+          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+          
+          <rect x="18" y="14" width="36" height="36" rx="6" fill="#1d3b63" />
+          <text x="29" y="38" font-size="14" font-weight="900" fill="#00f0ff">✉</text>
+
+          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">Email &amp; Direct Inquiries</text>
+          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">anup.gundelwar@example.com (or via GitHub issues)</text>
+
+          <text x="615" y="38" font-size="20" fill="#00f0ff" font-weight="900">→</text>
+          <line x1="0" y1="63" x2="100" y2="63" stroke="#247bff" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+
+    <!-- BOTTOM PROGRESS LINE -->
+    <path d="M40 470 L1160 470" stroke="#192d49" stroke-width="1" />
+    <text x="44" y="496" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">
+      GOOD IDEAS. CLEAN ARCHITECTURES. LET'S TALK.
+    </text>
+    <text x="980" y="496" font-size="11" font-weight="700" fill="#00f0ff" class="mono">
+      OPEN_FOR_BUSINESS // 2026
+    </text>
+
+    <!-- Border Glow -->
+    <rect x="1" y="1" width="1198" height="518" rx="19" fill="none" stroke="url(#connect-border)" stroke-width="2" />
+  </g>
+</svg>
