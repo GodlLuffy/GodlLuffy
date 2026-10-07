@@ -22,12 +22,12 @@
       <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.3" />
     </linearGradient>
 
-    <!-- Holographic Badge Foil Gradient -->
+    <!-- Holographic Light Foil Sweep -->
     <linearGradient id="foil-shine" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0" />
-      <stop offset="45%" stop-color="#00f0ff" stop-opacity="0.25" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.4" />
-      <stop offset="55%" stop-color="#ff3366" stop-opacity="0.25" />
+      <stop offset="45%" stop-color="#00f0ff" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="55%" stop-color="#ff3366" stop-opacity="0.2" />
       <stop offset="100%" stop-color="#247bff" stop-opacity="0" />
     </linearGradient>
 
@@ -45,7 +45,7 @@
     </clipPath>
 
     <clipPath id="badge-clip">
-      <rect x="0" y="0" width="340" height="490" rx="16" />
+      <rect x="0" y="0" width="340" height="470" rx="16" />
     </clipPath>
   </defs>
 
@@ -57,138 +57,154 @@
 
     <!-- TOP HEADER LINE -->
     <path d="M40 70 L1160 70" stroke="#1b2e4b" stroke-width="1.5" />
-    <text x="44" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">04 // METRICS &amp; IDENTITY DASHBOARD</text>
+    <text x="50" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">04 // METRICS &amp; IDENTITY DASHBOARD</text>
     <text x="980" y="46" font-size="11" font-weight="700" fill="#ff3366" class="mono" letter-spacing="1.5">[ VERIFIED DEVELOPER ]</text>
 
     <!-- ==================== LEFT COLUMN: HANGING CYBER ID BADGE ==================== -->
-    <g transform="translate(60, 90)">
-      <text x="0" y="32" font-size="34" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">THE BUILDER.</text>
-      <text x="0" y="58" font-size="13" font-weight="400" fill="#88a5cc" class="mono">BEHIND THE CODE &amp; ARCHITECTURE.</text>
+    <g transform="translate(60, 95)">
+      <!-- Title: Zero collision with lanyard -->
+      <text x="0" y="30" font-size="28" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">DEVELOPER ID PASS</text>
+      <text x="0" y="52" font-size="11" font-weight="600" fill="#00f0ff" class="mono">VERIFIED CREDENTIAL // LEVEL-4</text>
 
       <!-- PENDULUM SWING CONTAINER -->
-      <g transform="translate(40, 80)">
+      <g transform="translate(30, 90)">
         <animateTransform attributeName="transform" type="rotate"
-          values="-1.5 210 0; 1.5 210 0; -1.5 210 0"
+          values="-1.5 170 0; 1.5 170 0; -1.5 170 0"
           dur="7s" repeatCount="indefinite" ease="ease-in-out" />
 
         <!-- Lanyard Strap (Top) -->
-        <rect x="185" y="-30" width="50" height="70" fill="#14284b" stroke="#247bff" stroke-width="1.5" />
-        <line x1="200" y1="-30" x2="200" y2="40" stroke="#00f0ff" stroke-width="1.5" opacity="0.6" />
-        <line x1="220" y1="-30" x2="220" y2="40" stroke="#00f0ff" stroke-width="1.5" opacity="0.6" />
+        <rect x="145" y="-30" width="50" height="60" fill="#14284b" stroke="#247bff" stroke-width="1.5" />
+        <line x1="160" y1="-30" x2="160" y2="30" stroke="#00f0ff" stroke-width="1.5" opacity="0.6" />
+        <line x1="180" y1="-30" x2="180" y2="30" stroke="#00f0ff" stroke-width="1.5" opacity="0.6" />
 
         <!-- Metallic Chrome Clip -->
-        <rect x="195" y="35" width="30" height="28" rx="4" fill="#2d4870" stroke="#7bb0f5" stroke-width="1.5" />
-        <circle cx="210" cy="49" r="5" fill="#0d1b32" stroke="#7bb0f5" stroke-width="1.2" />
-
-        <!-- Lanyard Hole Slot on Card -->
-        <rect x="180" y="56" width="60" height="12" rx="6" fill="#050913" stroke="#247bff" stroke-width="1" />
+        <rect x="155" y="25" width="30" height="26" rx="4" fill="#2d4870" stroke="#7bb0f5" stroke-width="1.5" />
+        <circle cx="170" cy="38" r="5" fill="#0d1b32" stroke="#7bb0f5" stroke-width="1.2" />
 
         <!-- ID BADGE CARD BODY -->
-        <g transform="translate(40, 50)" clip-path="url(#badge-clip)">
+        <g transform="translate(0, 48)" clip-path="url(#badge-clip)">
           <!-- Card Surface -->
-          <rect x="0" y="0" width="340" height="490" rx="16" fill="#091322" stroke="#247bff" stroke-width="2" />
+          <rect x="0" y="0" width="340" height="470" rx="16" fill="#091322" stroke="#247bff" stroke-width="2" />
 
           <!-- Card Top Bar -->
-          <rect x="0" y="0" width="340" height="60" fill="#0d1f38" />
-          <text x="20" y="38" font-size="11" font-weight="800" fill="#00f0ff" class="mono" letter-spacing="2">ACCESS // DEV-PASS</text>
-          <text x="240" y="38" font-size="11" font-weight="700" fill="#ff3366" class="mono">SEC_01</text>
+          <rect x="0" y="0" width="340" height="52" fill="#0d1f38" />
+          <rect x="140" y="10" width="60" height="10" rx="5" fill="#050913" stroke="#247bff" stroke-width="1" />
+          <text x="20" y="38" font-size="11" font-weight="800" fill="#00f0ff" class="mono" letter-spacing="2">DEV-PASS // ARCHITECT</text>
+          <text x="260" y="38" font-size="11" font-weight="700" fill="#ff3366" class="mono">SEC_01</text>
 
-          <!-- Developer Avatar Frame -->
-          <g transform="translate(24, 75)">
-            <rect x="0" y="0" width="292" height="190" rx="10" fill="#050a14" stroke="#1c3b63" stroke-width="1.5" />
-            <image href="https://avatars.githubusercontent.com/u/198222047?v=4" x="4" y="4" width="284" height="182" preserveAspectRatio="xMidYMid slice" opacity="0.9" rx="8" />
-            <rect x="4" y="4" width="284" height="182" rx="8" fill="url(#dash-dots)" opacity="0.3" />
+          <!-- Vector Cyber Holographic Avatar (Infinite resolution, no blur) -->
+          <g transform="translate(24, 70)">
+            <rect x="0" y="0" width="292" height="175" rx="10" fill="#050a14" stroke="#1c3b63" stroke-width="1.5" />
             
+            <!-- Cyber Matrix Head Silhouette in Vector -->
+            <g transform="translate(146, 88)">
+              <!-- Outer aura -->
+              <circle cx="0" cy="0" r="55" fill="#0d223f" />
+              <!-- Cyber shoulders -->
+              <path d="M-60 60 L-35 25 L35 25 L60 60 Z" fill="#142c4c" stroke="#247bff" stroke-width="1.5" />
+              <!-- Neck -->
+              <rect x="-14" y="5" width="28" height="22" fill="#18365d" />
+              <!-- Head shape -->
+              <polygon points="0,-45 28,-25 24,12 0,22 -24,12 -28,-25" fill="#0b1a2e" stroke="#00f0ff" stroke-width="1.5" />
+              <!-- Cyber Visor Glasses -->
+              <polygon points="-22,-14 22,-14 18,-2 -18,-2" fill="#00f0ff" opacity="0.9" />
+              <line x1="-22" y1="-8" x2="22" y2="-8" stroke="#ffffff" stroke-width="1" />
+              <!-- Headphones -->
+              <rect x="-32" y="-20" width="6" height="22" rx="3" fill="#ff3366" />
+              <rect x="26" y="-20" width="6" height="22" rx="3" fill="#ff3366" />
+              <!-- Code tag -->
+              <text x="0" y="38" font-size="9" font-weight="800" fill="#00f0ff" text-anchor="middle" class="mono">&lt;GODLLUFFY /&gt;</text>
+            </g>
+
             <!-- Cyber corner brackets -->
-            <path d="M 12 28 L 12 12 L 28 12" stroke="#00f0ff" stroke-width="2" fill="none" />
-            <path d="M 280 28 L 280 12 L 264 12" stroke="#00f0ff" stroke-width="2" fill="none" />
-            <path d="M 12 166 L 12 182 L 28 182" stroke="#00f0ff" stroke-width="2" fill="none" />
-            <path d="M 280 166 L 280 182 L 264 182" stroke="#00f0ff" stroke-width="2" fill="none" />
+            <path d="M 10 24 L 10 10 L 24 10" stroke="#00f0ff" stroke-width="1.8" fill="none" />
+            <path d="M 282 24 L 282 10 L 268 10" stroke="#00f0ff" stroke-width="1.8" fill="none" />
+            <path d="M 10 151 L 10 165 L 24 165" stroke="#00f0ff" stroke-width="1.8" fill="none" />
+            <path d="M 282 151 L 282 165 L 268 165" stroke="#00f0ff" stroke-width="1.8" fill="none" />
           </g>
 
           <!-- Smart Chip Gold Icon -->
-          <g transform="translate(24, 280)">
-            <rect x="0" y="0" width="46" height="36" rx="6" fill="#d4af37" stroke="#997a15" stroke-width="1" />
-            <line x1="0" y1="18" x2="46" y2="18" stroke="#8a6d10" stroke-width="1" />
-            <line x1="23" y1="0" x2="23" y2="36" stroke="#8a6d10" stroke-width="1" />
-            <rect x="14" y="10" width="18" height="16" rx="2" fill="none" stroke="#8a6d10" stroke-width="1" />
+          <g transform="translate(24, 260)">
+            <rect x="0" y="0" width="44" height="34" rx="5" fill="#d4af37" stroke="#997a15" stroke-width="1" />
+            <line x1="0" y1="17" x2="44" y2="17" stroke="#8a6d10" stroke-width="1" />
+            <line x1="22" y1="0" x2="22" y2="34" stroke="#8a6d10" stroke-width="1" />
+            <rect x="13" y="9" width="18" height="16" rx="2" fill="none" stroke="#8a6d10" stroke-width="1" />
           </g>
 
           <!-- Card Details -->
-          <g transform="translate(85, 276)">
-            <text x="0" y="20" font-size="18" font-weight="900" fill="#f0f5ff">ANUP GUNDELWAR</text>
-            <text x="0" y="38" font-size="12" font-weight="700" fill="#00f0ff" class="mono">CREATIVE FULL-STACK ENG</text>
+          <g transform="translate(80, 258)">
+            <text x="0" y="18" font-size="17" font-weight="900" fill="#f0f5ff">ANUP GUNDELWAR</text>
+            <text x="0" y="34" font-size="11" font-weight="700" fill="#00f0ff" class="mono">CREATIVE FULL-STACK ENG</text>
           </g>
 
           <!-- Divider -->
-          <line x1="24" y1="334" x2="316" y2="334" stroke="#1b3456" stroke-width="1" />
+          <line x1="24" y1="310" x2="316" y2="310" stroke="#1b3456" stroke-width="1" />
 
           <!-- Details Table -->
-          <g transform="translate(24, 342)">
-            <text x="0" y="18" font-size="10" font-weight="600" fill="#6c8eb5" class="mono">GITHUB ID</text>
-            <text x="0" y="34" font-size="13" font-weight="800" fill="#f0f5ff" class="mono">GodlLuffy</text>
+          <g transform="translate(24, 318)">
+            <text x="0" y="16" font-size="9" font-weight="600" fill="#6c8eb5" class="mono">GITHUB ID</text>
+            <text x="0" y="32" font-size="12" font-weight="800" fill="#f0f5ff" class="mono">GodlLuffy</text>
 
-            <text x="140" y="18" font-size="10" font-weight="600" fill="#6c8eb5" class="mono">ROLE</text>
-            <text x="140" y="34" font-size="13" font-weight="800" fill="#ff3366" class="mono">ARCHITECT</text>
+            <text x="130" y="16" font-size="9" font-weight="600" fill="#6c8eb5" class="mono">CLEARANCE</text>
+            <text x="130" y="32" font-size="12" font-weight="800" fill="#ff3366" class="mono">LEVEL-04</text>
 
-            <text x="230" y="18" font-size="10" font-weight="600" fill="#6c8eb5" class="mono">STATUS</text>
-            <text x="230" y="34" font-size="13" font-weight="800" fill="#00f0ff" class="mono">ACTIVE</text>
+            <text x="220" y="16" font-size="9" font-weight="600" fill="#6c8eb5" class="mono">STATUS</text>
+            <text x="220" y="32" font-size="12" font-weight="800" fill="#00f0ff" class="mono">ACTIVE</text>
           </g>
 
           <!-- Barcode Generation -->
-          <g transform="translate(24, 400)">
-            <!-- Barcode lines -->
-            <rect x="0" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="6" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="11" y="0" width="4" height="35" fill="#88a9d3" />
-            <rect x="18" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="23" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="32" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="38" y="0" width="4" height="35" fill="#88a9d3" />
-            <rect x="46" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="52" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="57" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="66" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="72" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="79" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="84" y="0" width="4.5" height="35" fill="#88a9d3" />
-            <rect x="92" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="98" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="103" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="112" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="119" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="125" y="0" width="4" height="35" fill="#88a9d3" />
-            <rect x="133" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="139" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="148" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="153" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="160" y="0" width="4" height="35" fill="#88a9d3" />
-            <rect x="168" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="174" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="183" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="189" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="196" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="201" y="0" width="4" height="35" fill="#88a9d3" />
-            <rect x="209" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="215" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="224" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="230" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="237" y="0" width="1.5" height="35" fill="#88a9d3" />
-            <rect x="242" y="0" width="4" height="35" fill="#88a9d3" />
-            <rect x="250" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="256" y="0" width="5" height="35" fill="#88a9d3" />
-            <rect x="265" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="271" y="0" width="3" height="35" fill="#88a9d3" />
-            <rect x="278" y="0" width="2" height="35" fill="#88a9d3" />
-            <rect x="284" y="0" width="4" height="35" fill="#88a9d3" />
+          <g transform="translate(24, 370)">
+            <rect x="0" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="6" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="11" y="0" width="4" height="32" fill="#88a9d3" />
+            <rect x="18" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="23" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="32" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="38" y="0" width="4" height="32" fill="#88a9d3" />
+            <rect x="46" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="52" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="57" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="66" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="72" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="79" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="84" y="0" width="4.5" height="32" fill="#88a9d3" />
+            <rect x="92" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="98" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="103" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="112" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="119" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="125" y="0" width="4" height="32" fill="#88a9d3" />
+            <rect x="133" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="139" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="148" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="153" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="160" y="0" width="4" height="32" fill="#88a9d3" />
+            <rect x="168" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="174" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="183" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="189" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="196" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="201" y="0" width="4" height="32" fill="#88a9d3" />
+            <rect x="209" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="215" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="224" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="230" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="237" y="0" width="1.5" height="32" fill="#88a9d3" />
+            <rect x="242" y="0" width="4" height="32" fill="#88a9d3" />
+            <rect x="250" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="256" y="0" width="5" height="32" fill="#88a9d3" />
+            <rect x="265" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="271" y="0" width="3" height="32" fill="#88a9d3" />
+            <rect x="278" y="0" width="2" height="32" fill="#88a9d3" />
+            <rect x="284" y="0" width="4" height="32" fill="#88a9d3" />
 
-            <text x="0" y="52" font-size="9" font-weight="600" fill="#6c8eb5" class="mono">
+            <text x="0" y="46" font-size="9" font-weight="600" fill="#6c8eb5" class="mono">
               AUTH_HASH: 0x98222047_GODL_SYS
             </text>
           </g>
 
           <!-- Holographic Light Sweep Across Badge -->
-          <rect x="-400" y="0" width="280" height="490" fill="url(#foil-shine)" transform="skewX(-20)">
+          <rect x="-400" y="0" width="280" height="470" fill="url(#foil-shine)" transform="skewX(-20)">
             <animate attributeName="x" begin="0s" dur="8s" values="-400;650" repeatCount="indefinite" />
           </rect>
         </g>
@@ -196,101 +212,101 @@
     </g>
 
     <!-- ==================== RIGHT COLUMN: REAL WORK, REAL IMPACT METRICS ==================== -->
-    <g transform="translate(540, 90)">
-      <text x="0" y="32" font-size="34" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">REAL WORK. REAL IMPACT.</text>
-      <text x="0" y="58" font-size="13" font-weight="400" fill="#88a5cc" class="mono">PUBLIC GITHUB STATS &amp; REPOSITORY INTELLIGENCE</text>
+    <g transform="translate(540, 95)">
+      <text x="0" y="30" font-size="30" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">REAL WORK. REAL IMPACT.</text>
+      <text x="0" y="52" font-size="12" font-weight="400" fill="#88a5cc" class="mono">PUBLIC GITHUB STATS &amp; REPOSITORY INTELLIGENCE</text>
 
       <!-- 3 Top Metric Counter Cards -->
-      <g transform="translate(0, 80)">
+      <g transform="translate(0, 75)">
         <!-- Card 1: Public Repos -->
-        <rect x="0" y="0" width="186" height="110" rx="10" fill="#0b172a" stroke="#1d3b63" stroke-width="1.2" />
-        <text x="20" y="28" font-size="10" font-weight="700" fill="#7194bf" class="mono">PUBLIC REPOS</text>
-        <text x="20" y="74" font-size="44" font-weight="900" fill="#00f0ff">10+</text>
-        <text x="20" y="94" font-size="10" font-weight="600" fill="#4d6f99" class="mono">ACTIVE &amp; EXPANDING</text>
+        <rect x="0" y="0" width="186" height="100" rx="10" fill="#0b172a" stroke="#1d3b63" stroke-width="1.2" />
+        <text x="18" y="26" font-size="10" font-weight="700" fill="#7194bf" class="mono">PUBLIC REPOS</text>
+        <text x="18" y="68" font-size="38" font-weight="900" fill="#00f0ff">10+</text>
+        <text x="18" y="86" font-size="9" font-weight="600" fill="#4d6f99" class="mono">EXPANDING PORTFOLIO</text>
 
-        <!-- Card 2: Languages -->
-        <rect x="206" y="0" width="186" height="110" rx="10" fill="#0b172a" stroke="#1d3b63" stroke-width="1.2" />
-        <text x="20" y="28" font-size="10" font-weight="700" fill="#7194bf" class="mono" transform="translate(206,0)">CORE DOMAINS</text>
-        <text x="20" y="74" font-size="44" font-weight="900" fill="#247bff" transform="translate(206,0)">4</text>
-        <text x="20" y="94" font-size="10" font-weight="600" fill="#4d6f99" class="mono" transform="translate(206,0)">WEB, 3D, MOBILE, APIS</text>
+        <!-- Card 2: Disciplines -->
+        <rect x="206" y="0" width="186" height="100" rx="10" fill="#0b172a" stroke="#1d3b63" stroke-width="1.2" />
+        <text x="224" y="26" font-size="10" font-weight="700" fill="#7194bf" class="mono">CORE DOMAINS</text>
+        <text x="224" y="68" font-size="38" font-weight="900" fill="#247bff">4</text>
+        <text x="224" y="86" font-size="9" font-weight="600" fill="#4d6f99" class="mono">WEB, 3D, MOBILE, APIS</text>
 
-        <!-- Card 3: Code Velocity -->
-        <rect x="412" y="0" width="186" height="110" rx="10" fill="#0b172a" stroke="#1d3b63" stroke-width="1.2" />
-        <text x="20" y="28" font-size="10" font-weight="700" fill="#7194bf" class="mono" transform="translate(412,0)">VELOCITY</text>
-        <text x="20" y="74" font-size="44" font-weight="900" fill="#ff3366" transform="translate(412,0)">60<tspan font-size="24">FPS</tspan></text>
-        <text x="20" y="94" font-size="10" font-weight="600" fill="#4d6f99" class="mono" transform="translate(412,0)">HIGH-OCTANE BUILDS</text>
+        <!-- Card 3: Velocity -->
+        <rect x="412" y="0" width="186" height="100" rx="10" fill="#0b172a" stroke="#1d3b63" stroke-width="1.2" />
+        <text x="430" y="26" font-size="10" font-weight="700" fill="#7194bf" class="mono">VELOCITY</text>
+        <text x="430" y="68" font-size="38" font-weight="900" fill="#ff3366">60<tspan font-size="20">FPS</tspan></text>
+        <text x="430" y="86" font-size="9" font-weight="600" fill="#4d6f99" class="mono">HIGH-OCTANE BUILDS</text>
       </g>
 
       <!-- Language / Core Focus Breakdown Bars -->
-      <g transform="translate(0, 220)">
+      <g transform="translate(0, 205)">
         <text x="0" y="16" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="1.6">
           PRIMARY ENGINEERING DISCIPLINES
         </text>
 
-        <!-- Bar 1: JavaScript & Creative Web -->
+        <!-- Bar 1: JavaScript & 3D WebGL -->
         <g transform="translate(0, 32)">
           <text x="0" y="14" font-size="12" font-weight="700" fill="#f0f5ff" class="mono">JavaScript &amp; 3D WebGL (Three.js)</text>
-          <text x="560" y="14" font-size="13" font-weight="800" fill="#00f0ff" class="mono" text-anchor="end">40%</text>
-          <rect x="0" y="22" width="560" height="10" rx="5" fill="#10233e" />
-          <rect x="0" y="22" width="224" height="10" rx="5" fill="#00f0ff">
-            <animate attributeName="width" from="0" to="224" dur="1.8s" fill="freeze" />
+          <text x="590" y="14" font-size="12" font-weight="800" fill="#00f0ff" class="mono" text-anchor="end">40%</text>
+          <rect x="0" y="22" width="598" height="9" rx="4" fill="#10233e" />
+          <rect x="0" y="22" width="240" height="9" rx="4" fill="#00f0ff">
+            <animate attributeName="width" from="0" to="240" dur="1.8s" fill="freeze" />
           </rect>
         </g>
 
         <!-- Bar 2: Dart & Flutter Mobile -->
-        <g transform="translate(0, 80)">
+        <g transform="translate(0, 78)">
           <text x="0" y="14" font-size="12" font-weight="700" fill="#f0f5ff" class="mono">Dart &amp; Flutter (Mobile Architecture)</text>
-          <text x="560" y="14" font-size="13" font-weight="800" fill="#247bff" class="mono" text-anchor="end">30%</text>
-          <rect x="0" y="22" width="560" height="10" rx="5" fill="#10233e" />
-          <rect x="0" y="22" width="168" height="10" rx="5" fill="#247bff">
-            <animate attributeName="width" from="0" to="168" dur="1.8s" fill="freeze" />
+          <text x="590" y="14" font-size="12" font-weight="800" fill="#247bff" class="mono" text-anchor="end">30%</text>
+          <rect x="0" y="22" width="598" height="9" rx="4" fill="#10233e" />
+          <rect x="0" y="22" width="180" height="9" rx="4" fill="#247bff">
+            <animate attributeName="width" from="0" to="180" dur="1.8s" fill="freeze" />
           </rect>
         </g>
 
-        <!-- Bar 3: CSS3, Micro-Animations & UI Precision -->
-        <g transform="translate(0, 128)">
+        <!-- Bar 3: CSS3, Micro-Animations & Dark UI -->
+        <g transform="translate(0, 124)">
           <text x="0" y="14" font-size="12" font-weight="700" fill="#f0f5ff" class="mono">CSS3, Micro-Animations &amp; Dark UI</text>
-          <text x="560" y="14" font-size="13" font-weight="800" fill="#ff3366" class="mono" text-anchor="end">20%</text>
-          <rect x="0" y="22" width="560" height="10" rx="5" fill="#10233e" />
-          <rect x="0" y="22" width="112" height="10" rx="5" fill="#ff3366">
-            <animate attributeName="width" from="0" to="112" dur="1.8s" fill="freeze" />
+          <text x="590" y="14" font-size="12" font-weight="800" fill="#ff3366" class="mono" text-anchor="end">20%</text>
+          <rect x="0" y="22" width="598" height="9" rx="4" fill="#10233e" />
+          <rect x="0" y="22" width="120" height="9" rx="4" fill="#ff3366">
+            <animate attributeName="width" from="0" to="120" dur="1.8s" fill="freeze" />
           </rect>
         </g>
 
-        <!-- Bar 4: Backend Node.js & APIs -->
-        <g transform="translate(0, 176)">
-          <text x="0" y="14" font-size="12" font-weight="700" fill="#f0f5ff" class="mono">Backend, REST APIs &amp; DevOps</text>
-          <text x="560" y="14" font-size="13" font-weight="800" fill="#54c5f8" class="mono" text-anchor="end">10%</text>
-          <rect x="0" y="22" width="560" height="10" rx="5" fill="#10233e" />
-          <rect x="0" y="22" width="56" height="10" rx="5" fill="#54c5f8">
-            <animate attributeName="width" from="0" to="56" dur="1.8s" fill="freeze" />
+        <!-- Bar 4: Backend Node.js & REST APIs -->
+        <g transform="translate(0, 170)">
+          <text x="0" y="14" font-size="12" font-weight="700" fill="#f0f5ff" class="mono">Backend, REST APIs &amp; Cloud</text>
+          <text x="590" y="14" font-size="12" font-weight="800" fill="#54c5f8" class="mono" text-anchor="end">10%</text>
+          <rect x="0" y="22" width="598" height="9" rx="4" fill="#10233e" />
+          <rect x="0" y="22" width="60" height="9" rx="4" fill="#54c5f8">
+            <animate attributeName="width" from="0" to="60" dur="1.8s" fill="freeze" />
           </rect>
         </g>
       </g>
 
       <!-- Status Card: CURRENT FOCUS -->
-      <g transform="translate(0, 470)">
-        <rect x="0" y="0" width="598" height="120" rx="12" fill="#0a172a" stroke="#224675" stroke-width="1.5" />
+      <g transform="translate(0, 440)">
+        <rect x="0" y="0" width="598" height="110" rx="12" fill="#0a172a" stroke="#224675" stroke-width="1.5" />
         
-        <rect x="20" y="20" width="60" height="24" rx="4" fill="#ff3366" />
-        <text x="32" y="36" font-size="10" font-weight="900" fill="#ffffff" class="mono" letter-spacing="1">NOW</text>
+        <rect x="18" y="16" width="54" height="22" rx="4" fill="#ff3366" />
+        <text x="27" y="31" font-size="9" font-weight="900" fill="#ffffff" class="mono" letter-spacing="1">NOW</text>
 
-        <text x="94" y="36" font-size="15" font-weight="800" fill="#f0f5ff">Building next-gen 3D web apps &amp; Flutter products</text>
+        <text x="82" y="32" font-size="14" font-weight="800" fill="#f0f5ff">Building 3D WebGL experiences &amp; Flutter products</text>
         
-        <text x="20" y="72" font-size="13" font-weight="400" fill="#88a5cc" class="mono">
-          Exploring Three.js shader pipelines and high-scalability full-stack systems.
+        <text x="18" y="62" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+          Exploring shader pipelines and high-scalability frontend systems.
         </text>
         
-        <circle cx="26" cy="98" r="4" fill="#00f0ff" />
-        <text x="38" y="102" font-size="11" font-weight="700" fill="#00f0ff" class="mono">
-          OPEN FOR CONTRACTS, INTERACTIVE PROTOTYPING &amp; COLLABORATION
+        <circle cx="24" cy="88" r="4" fill="#00f0ff" />
+        <text x="36" y="92" font-size="10" font-weight="700" fill="#00f0ff" class="mono">
+          OPEN FOR CONTRACTS &amp; CUTTING-EDGE COLLABORATION
         </text>
       </g>
     </g>
 
     <!-- Bottom border line -->
     <path d="M40 730 L1160 730" stroke="#192d49" stroke-width="1" />
-    <text x="44" y="756" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">
+    <text x="50" y="756" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">
       BUILDER CREDENTIALS VERIFIED · REPOSITORY SNAPSHOT 2026
     </text>
     <text x="1000" y="756" font-size="11" font-weight="700" fill="#247bff" class="mono">

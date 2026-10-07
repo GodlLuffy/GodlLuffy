@@ -50,104 +50,108 @@
 
     <!-- TOP DIVIDER -->
     <path d="M40 70 L1160 70" stroke="#1b2e4b" stroke-width="1.5" />
-    <text x="44" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">05 // COMMUNICATIONS &amp; COLLABORATION NETWORK</text>
+    <text x="50" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">05 // COMMUNICATIONS &amp; COLLABORATION NETWORK</text>
     <text x="1010" y="46" font-size="11" font-weight="700" fill="#00f0ff" class="mono" letter-spacing="1.5">[ SIGNALS OPEN ]</text>
 
     <!-- LEFT COLUMN: CALL TO ACTION -->
-    <g transform="translate(60, 110)">
-      <text x="0" y="32" font-size="46" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">LET'S</text>
-      <text x="0" y="80" font-size="46" font-weight="900" fill="#00f0ff" letter-spacing="0.5">CONNECT.</text>
+    <g transform="translate(60, 105)">
+      <text x="0" y="32" font-size="44" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">LET'S</text>
+      <text x="0" y="78" font-size="44" font-weight="900" fill="#00f0ff" letter-spacing="0.5">CONNECT.</text>
       
-      <g transform="translate(0, 120)">
-        <rect x="0" y="0" width="340" height="150" rx="14" fill="#091424" stroke="#1d3b63" stroke-width="1.5" />
+      <g transform="translate(0, 110)">
+        <rect x="0" y="0" width="350" height="175" rx="14" fill="#091424" stroke="#1d3b63" stroke-width="1.5" />
         
-        <circle cx="34" cy="36" r="14" fill="#122744" stroke="#247bff" stroke-width="1.5" />
-        <text x="28" y="41" font-size="13" font-weight="900" fill="#00f0ff">⚡</text>
+        <circle cx="34" cy="34" r="14" fill="#122744" stroke="#247bff" stroke-width="1.5" />
+        <text x="28" y="39" font-size="13" font-weight="900" fill="#00f0ff">⚡</text>
 
-        <text x="60" y="34" font-size="16" font-weight="800" fill="#f0f5ff">Have a bold project?</text>
-        <text x="60" y="50" font-size="11" font-weight="700" fill="#ff3366" class="mono">OPEN FOR 2026 BUILDS</text>
+        <text x="60" y="32" font-size="15" font-weight="800" fill="#f0f5ff">Have a bold vision?</text>
+        <text x="60" y="48" font-size="10" font-weight="700" fill="#ff3366" class="mono">OPEN FOR NEW BUILDS</text>
         
-        <text x="24" y="84" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
-          Whether you need a high-end 3D web experience, a cross-platform mobile app, or frontend consulting — let's build something unforgettable.
+        <text x="24" y="82" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+          Have an ambitious 3D web experience,
+        </text>
+        <text x="24" y="102" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+          Flutter mobile project, or creative
+        </text>
+        <text x="24" y="122" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+          full-stack concept? Let's build together.
         </text>
 
-        <line x1="24" y1="116" x2="316" y2="116" stroke="#142c4c" stroke-width="1" />
-        <text x="24" y="134" font-size="10" font-weight="700" fill="#00f0ff" class="mono">
+        <line x1="24" y1="142" x2="326" y2="142" stroke="#142c4c" stroke-width="1" />
+        <text x="24" y="160" font-size="10" font-weight="700" fill="#00f0ff" class="mono">
           STATUS: INBOX MONITORED DAILY
         </text>
       </g>
     </g>
 
     <!-- RIGHT COLUMN: CONNECTION CHANNEL CARDS -->
-    <g transform="translate(480, 100)">
+    <g transform="translate(470, 105)">
       <text x="0" y="24" font-size="28" font-weight="900" fill="#f0f5ff">BUILD SOMETHING GREAT.</text>
-      <text x="0" y="46" font-size="12" font-weight="400" fill="#88a5cc" class="mono">DIRECT CHANNELS &amp; VERIFIED HANDLES</text>
+      <text x="0" y="44" font-size="11" font-weight="400" fill="#88a5cc" class="mono">DIRECT CHANNELS &amp; VERIFIED CONTACTS</text>
 
-      <g transform="translate(0, 65)">
+      <g transform="translate(0, 60)">
         <!-- Card 1: LinkedIn -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+          <rect x="0" y="0" width="670" height="60" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
           
-          <!-- LinkedIn Icon -->
-          <rect x="18" y="14" width="36" height="36" rx="6" fill="#0a66c2" />
-          <text x="30" y="38" font-size="18" font-weight="900" fill="#ffffff" class="mono">in</text>
+          <rect x="16" y="12" width="36" height="36" rx="6" fill="#0a66c2" />
+          <text x="28" y="36" font-size="18" font-weight="900" fill="#ffffff" class="mono">in</text>
 
-          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">LinkedIn</text>
-          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">linkedin.com/in/anup-gundelwar</text>
+          <text x="68" y="28" font-size="15" font-weight="800" fill="#f0f5ff">LinkedIn</text>
+          <text x="68" y="44" font-size="11" font-weight="600" fill="#7194bf" class="mono">linkedin.com/in/anup-gundelwar</text>
 
-          <text x="615" y="38" font-size="20" fill="#247bff" font-weight="900">→</text>
-          <line x1="0" y1="63" x2="100" y2="63" stroke="#0a66c2" stroke-width="2" />
+          <text x="630" y="36" font-size="18" fill="#247bff" font-weight="900">→</text>
+          <line x1="0" y1="59" x2="100" y2="59" stroke="#0a66c2" stroke-width="2" />
         </g>
 
         <!-- Card 2: GitHub -->
-        <g transform="translate(0, 76)">
-          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+        <g transform="translate(0, 72)">
+          <rect x="0" y="0" width="670" height="60" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
           
-          <!-- GitHub Icon -->
-          <circle cx="36" cy="32" r="18" fill="#1b2e4b" />
-          <text x="27" y="38" font-size="16" font-weight="900" fill="#00f0ff">GH</text>
+          <circle cx="34" cy="30" r="18" fill="#1b2e4b" />
+          <text x="25" y="36" font-size="15" font-weight="900" fill="#00f0ff">GH</text>
 
-          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">GitHub Profile</text>
-          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">github.com/GodlLuffy</text>
+          <text x="68" y="28" font-size="15" font-weight="800" fill="#f0f5ff">GitHub Profile</text>
+          <text x="68" y="44" font-size="11" font-weight="600" fill="#7194bf" class="mono">github.com/GodlLuffy</text>
 
-          <text x="615" y="38" font-size="20" fill="#00f0ff" font-weight="900">→</text>
-          <line x1="0" y1="63" x2="100" y2="63" stroke="#00f0ff" stroke-width="2" />
+          <text x="630" y="36" font-size="18" fill="#00f0ff" font-weight="900">→</text>
+          <line x1="0" y1="59" x2="100" y2="59" stroke="#00f0ff" stroke-width="2" />
         </g>
 
         <!-- Card 3: X / Twitter -->
-        <g transform="translate(0, 152)">
-          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+        <g transform="translate(0, 144)">
+          <rect x="0" y="0" width="670" height="60" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
           
-          <rect x="18" y="14" width="36" height="36" rx="6" fill="#142136" />
-          <text x="31" y="38" font-size="16" font-weight="900" fill="#f0f5ff">𝕏</text>
+          <rect x="16" y="12" width="36" height="36" rx="6" fill="#142136" />
+          <text x="29" y="36" font-size="16" font-weight="900" fill="#f0f5ff">𝕏</text>
 
-          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">X (Twitter)</text>
-          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">twitter.com/GodlLuffy</text>
+          <text x="68" y="28" font-size="15" font-weight="800" fill="#f0f5ff">X (Twitter)</text>
+          <text x="68" y="44" font-size="11" font-weight="600" fill="#7194bf" class="mono">twitter.com/GodlLuffy</text>
 
-          <text x="615" y="38" font-size="20" fill="#ff3366" font-weight="900">→</text>
-          <line x1="0" y1="63" x2="100" y2="63" stroke="#ff3366" stroke-width="2" />
+          <text x="630" y="36" font-size="18" fill="#ff3366" font-weight="900">→</text>
+          <line x1="0" y1="59" x2="100" y2="59" stroke="#ff3366" stroke-width="2" />
         </g>
 
-        <!-- Card 4: Email & Collaboration -->
-        <g transform="translate(0, 228)">
-          <rect x="0" y="0" width="660" height="64" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
+        <!-- Card 4: Email Direct -->
+        <g transform="translate(0, 216)">
+          <rect x="0" y="0" width="670" height="60" rx="10" fill="#091424" stroke="#1c3a63" stroke-width="1.2" />
           
-          <rect x="18" y="14" width="36" height="36" rx="6" fill="#1d3b63" />
-          <text x="29" y="38" font-size="14" font-weight="900" fill="#00f0ff">✉</text>
+          <rect x="16" y="12" width="36" height="36" rx="6" fill="#1d3b63" />
+          <text x="27" y="35" font-size="14" font-weight="900" fill="#00f0ff">✉</text>
 
-          <text x="70" y="32" font-size="16" font-weight="800" fill="#f0f5ff">Email &amp; Direct Inquiries</text>
-          <text x="70" y="48" font-size="11" font-weight="600" fill="#7194bf" class="mono">anup.gundelwar@example.com (or via GitHub issues)</text>
+          <text x="68" y="28" font-size="15" font-weight="800" fill="#f0f5ff">Direct Email Inquiry</text>
+          <text x="68" y="44" font-size="11" font-weight="600" fill="#7194bf" class="mono">gundelwaranup@gmail.com</text>
 
-          <text x="615" y="38" font-size="20" fill="#00f0ff" font-weight="900">→</text>
-          <line x1="0" y1="63" x2="100" y2="63" stroke="#247bff" stroke-width="2" />
+          <text x="630" y="36" font-size="18" fill="#00f0ff" font-weight="900">→</text>
+          <line x1="0" y1="59" x2="100" y2="59" stroke="#247bff" stroke-width="2" />
         </g>
       </g>
     </g>
 
     <!-- BOTTOM PROGRESS LINE -->
     <path d="M40 470 L1160 470" stroke="#192d49" stroke-width="1" />
-    <text x="44" y="496" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">
-      GOOD IDEAS. CLEAN ARCHITECTURES. LET'S TALK.
+    <text x="50" y="496" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">
+      GOOD PEOPLE. CLEAN ARCHITECTURES. LET'S TALK.
     </text>
     <text x="980" y="496" font-size="11" font-weight="700" fill="#00f0ff" class="mono">
       OPEN_FOR_BUSINESS // 2026

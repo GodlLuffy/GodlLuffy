@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" height="100%">
   <defs>
-    <!-- Fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Outfit:wght@400;600;800;900&amp;display=swap');
       text {
@@ -13,20 +12,18 @@
         animation: pulse-glow 2s infinite ease-in-out;
       }
       @keyframes pulse-glow {
-        0%, 100% { opacity: 0.4; r: 4px; }
-        50% { opacity: 1; r: 6px; }
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
       }
-      @keyframes sweep {
-        0% { transform: translateY(-120px); opacity: 0; }
-        50% { opacity: 0.8; }
-        100% { transform: translateY(240px); opacity: 0; }
+      .cursor-blink {
+        animation: blink 1s infinite steps(1);
       }
-      .scanline {
-        animation: sweep 4s infinite linear;
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
       }
     </style>
 
-    <!-- Gradients -->
     <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050811" />
       <stop offset="50%" stop-color="#070c1a" />
@@ -38,11 +35,6 @@
       <stop offset="100%" stop-color="#247bff" />
     </linearGradient>
 
-    <linearGradient id="cyber-red" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff3366" />
-      <stop offset="100%" stop-color="#ff1744" />
-    </linearGradient>
-
     <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#247bff" stop-opacity="0.6" />
       <stop offset="50%" stop-color="#14284b" stop-opacity="0.4" />
@@ -50,208 +42,209 @@
     </linearGradient>
 
     <radialGradient id="glow-cyan" cx="80%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.14" />
       <stop offset="60%" stop-color="#247bff" stop-opacity="0.04" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="glow-red" cx="20%" cy="85%" r="40%">
-      <stop offset="0%" stop-color="#ff3366" stop-opacity="0.12" />
+    <radialGradient id="glow-red" cx="15%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#ff3366" stop-opacity="0.1" />
       <stop offset="70%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Pattern: Dot Matrix -->
     <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.2" fill="#1b3258" opacity="0.4" />
+      <circle cx="2" cy="2" r="1.1" fill="#1b3258" opacity="0.4" />
     </pattern>
 
-    <!-- Clip Paths -->
     <clipPath id="hero-rounded">
       <rect x="0" y="0" width="1200" height="640" rx="20" />
     </clipPath>
-
-    <clipPath id="avatar-clip">
-      <rect x="760" y="110" width="370" height="420" rx="16" />
-    </clipPath>
   </defs>
 
-  <!-- Container -->
   <g clip-path="url(#hero-rounded)">
     <!-- Base Background -->
     <rect x="0" y="0" width="1200" height="640" fill="url(#hero-bg)" />
     <rect x="0" y="0" width="1200" height="640" fill="url(#dot-grid)" />
-
-    <!-- Ambient Glows -->
     <rect x="0" y="0" width="1200" height="640" fill="url(#glow-cyan)" />
     <rect x="0" y="0" width="1200" height="640" fill="url(#glow-red)" />
 
     <!-- Background Watermark -->
-    <text x="740" y="520" font-size="220" font-weight="900" fill="#0d1b33" opacity="0.35" letter-spacing="-6">LUFFY</text>
-
-    <!-- HUD Isometric Grid Lines -->
-    <path d="M520 80 L220 640" stroke="#162c50" stroke-width="1.2" opacity="0.35" />
-    <path d="M600 80 L300 640" stroke="#162c50" stroke-width="1.2" opacity="0.35" />
-    <path d="M680 80 L380 640" stroke="#162c50" stroke-width="1.2" opacity="0.35" />
-    <path d="M760 80 L460 640" stroke="#162c50" stroke-width="1.2" opacity="0.35" />
-    <path d="M840 80 L540 640" stroke="#162c50" stroke-width="1.2" opacity="0.35" />
-
-    <!-- Concentric Rotating Orbital Rings -->
-    <g>
-      <circle cx="945" cy="320" r="210" fill="none" stroke="#247bff" stroke-width="1.5" stroke-dasharray="14 18" opacity="0.25">
-        <animateTransform attributeName="transform" type="rotate" from="0 945 320" to="360 945 320" dur="40s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="945" cy="320" r="235" fill="none" stroke="#00f0ff" stroke-width="2" stroke-dasharray="80 320" opacity="0.5">
-        <animateTransform attributeName="transform" type="rotate" from="360 945 320" to="0 945 320" dur="25s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="945" cy="320" r="255" fill="none" stroke="#ff3366" stroke-width="1.5" stroke-dasharray="40 460" opacity="0.45">
-        <animateTransform attributeName="transform" type="rotate" from="0 945 320" to="360 945 320" dur="50s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <text x="500" y="520" font-size="200" font-weight="900" fill="#0c182e" opacity="0.25" letter-spacing="-5">GODL</text>
 
     <!-- TOP HUD BAR -->
     <path d="M40 70 L1160 70" stroke="#1b2e4b" stroke-width="1.5" />
-    
-    <text x="44" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">GODLLUFFY // CREATIVE SOFTWARE ARCHITECT</text>
-    <text x="480" y="46" font-size="11" font-weight="600" fill="#4d698e" class="mono" letter-spacing="1.5">SYS_ID: #198222047</text>
-    <text x="730" y="46" font-size="11" font-weight="600" fill="#7d95b7" class="mono" letter-spacing="1.5">LOC: IN // GLOBAL</text>
+    <text x="50" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">GODLLUFFY // CREATIVE SOFTWARE ARCHITECT</text>
+    <text x="520" y="46" font-size="11" font-weight="600" fill="#4d698e" class="mono" letter-spacing="1.5">SYS_ID: #198222047</text>
+    <text x="760" y="46" font-size="11" font-weight="600" fill="#7d95b7" class="mono" letter-spacing="1.5">LOC: IN // GLOBAL</text>
 
-    <!-- Chevrons -->
+    <!-- Top Right Chevrons -->
     <path d="M1100 35 L1110 35 L1104 50 L1094 50 Z" fill="#ff3366" />
     <path d="M1114 35 L1124 35 L1118 50 L1108 50 Z" fill="#ff3366" />
     <path d="M1128 35 L1138 35 L1132 50 L1122 50 Z" fill="#ff3366" />
 
+    <!-- ==================== LEFT COLUMN: HERO IDENTITY ==================== -->
     <!-- Status Badge -->
-    <rect x="44" y="98" width="186" height="28" rx="6" fill="#0d1f36" stroke="#1f4474" stroke-width="1" />
-    <circle cx="58" cy="112" r="4.5" fill="#00f0ff" class="pulse" />
-    <text x="72" y="117" font-size="10" font-weight="700" fill="#d2e3f8" class="mono" letter-spacing="1.2">AVAILABLE TO BUILD</text>
+    <g transform="translate(50, 100)">
+      <rect x="0" y="0" width="180" height="28" rx="6" fill="#0d1f36" stroke="#1f4474" stroke-width="1" />
+      <circle cx="14" cy="14" r="4" fill="#00f0ff" class="pulse" />
+      <text x="28" y="18" font-size="10" font-weight="700" fill="#d2e3f8" class="mono" letter-spacing="1.2">AVAILABLE TO BUILD</text>
+    </g>
 
-    <!-- Greeting with typewriter prompt -->
-    <text x="45" y="168" font-size="17" font-weight="600" fill="#6c8bb3" class="mono">
+    <!-- Greeting Prompt -->
+    <text x="50" y="165" font-size="15" font-weight="600" fill="#6c8bb3" class="mono">
       &gt; system.init(&quot;<tspan fill="#00f0ff">Anup Gundelwar</tspan>&quot;)
     </text>
 
-    <!-- HERO NAME -->
-    <text x="42" y="275" font-size="116" font-weight="900" fill="#f0f5ff" letter-spacing="1">ANUP</text>
-    <text x="42" y="385" font-size="116" font-weight="900" fill="url(#cyber-cyan)" letter-spacing="1">GUNDELWAR</text>
-
-    <!-- Cyber Slogan Badge -->
-    <g transform="translate(425, 235)">
-      <path d="M0 0 L10 0 L5 16 L-5 16 Z" fill="#ff3366" />
-      <path d="M12 0 L22 0 L17 16 L7 16 Z" fill="#ff3366" />
-      <path d="M24 0 L34 0 L29 16 L19 16 Z" fill="#ff3366" />
-      <text x="0" y="44" font-size="26" font-weight="900" fill="#f0f5ff" letter-spacing="1">BUILD.</text>
-      <text x="0" y="70" font-size="26" font-weight="900" fill="#00f0ff" letter-spacing="1">BEYOND.</text>
+    <!-- NAME SECTION (Completely separated, zero overlap) -->
+    <text x="50" y="240" font-size="68" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">ANUP</text>
+    
+    <!-- Cyber Slogan Badge (Cleanly placed to the right of ANUP, ample margin) -->
+    <g transform="translate(260, 195)">
+      <path d="M0 0 L8 0 L4 14 L-4 14 Z" fill="#ff3366" />
+      <path d="M10 0 L18 0 L14 14 L6 14 Z" fill="#ff3366" />
+      <path d="M20 0 L28 0 L24 14 L16 14 Z" fill="#ff3366" />
+      <text x="0" y="32" font-size="20" font-weight="900" fill="#f0f5ff" letter-spacing="1">BUILD.</text>
+      <text x="0" y="52" font-size="20" font-weight="900" fill="#00f0ff" letter-spacing="1">BEYOND.</text>
     </g>
 
-    <!-- DYNAMIC ROLE CAROUSEL (Animated Opacity) -->
-    <!-- Role 1 -->
-    <g opacity="1">
-      <animate attributeName="opacity" begin="0s" dur="16s" values="1;1;0;0;1" keyTimes="0;0.22;0.25;0.97;1" repeatCount="indefinite" />
-      <rect x="44" y="415" width="450" height="34" rx="6" fill="#0d1b30" opacity="0.6" />
-      <text x="56" y="438" font-size="21" font-weight="700" fill="#f0f5ff">⚡ Creative Frontend &amp; 3D Developer</text>
-    </g>
-    <!-- Role 2 -->
-    <g opacity="0">
-      <animate attributeName="opacity" begin="0s" dur="16s" values="0;0;1;1;0;0" keyTimes="0;0.22;0.25;0.47;0.5;1" repeatCount="indefinite" />
-      <rect x="44" y="415" width="450" height="34" rx="6" fill="#0d1b30" opacity="0.6" />
-      <text x="56" y="438" font-size="21" font-weight="700" fill="#f0f5ff">🚀 Full-Stack Web &amp; App Architect</text>
-    </g>
-    <!-- Role 3 -->
-    <g opacity="0">
-      <animate attributeName="opacity" begin="0s" dur="16s" values="0;0;1;1;0;0" keyTimes="0;0.47;0.5;0.72;0.75;1" repeatCount="indefinite" />
-      <rect x="44" y="415" width="450" height="34" rx="6" fill="#0d1b30" opacity="0.6" />
-      <text x="56" y="438" font-size="21" font-weight="700" fill="#f0f5ff">📱 Cross-Platform Mobile Engineer (Flutter)</text>
-    </g>
-    <!-- Role 4 -->
-    <g opacity="0">
-      <animate attributeName="opacity" begin="0s" dur="16s" values="0;0;1;1;0" keyTimes="0;0.72;0.75;0.97;1" repeatCount="indefinite" />
-      <rect x="44" y="415" width="450" height="34" rx="6" fill="#0d1b30" opacity="0.6" />
-      <text x="56" y="438" font-size="21" font-weight="700" fill="#f0f5ff">✨ UI/UX &amp; 60FPS Micro-Animations Crafter</text>
+    <text x="50" y="318" font-size="68" font-weight="900" fill="url(#cyber-cyan)" letter-spacing="0.5">GUNDELWAR</text>
+
+    <!-- DYNAMIC ROLE CAROUSEL (Clean row at y=355) -->
+    <g transform="translate(50, 355)">
+      <!-- Role 1 -->
+      <g opacity="1">
+        <animate attributeName="opacity" begin="0s" dur="16s" values="1;1;0;0;1" keyTimes="0;0.22;0.25;0.97;1" repeatCount="indefinite" />
+        <rect x="0" y="0" width="480" height="36" rx="6" fill="#0b172a" stroke="#1c3a63" stroke-width="1" />
+        <text x="14" y="24" font-size="17" font-weight="700" fill="#f0f5ff">⚡ Creative Frontend &amp; 3D Developer</text>
+      </g>
+      <!-- Role 2 -->
+      <g opacity="0">
+        <animate attributeName="opacity" begin="0s" dur="16s" values="0;0;1;1;0;0" keyTimes="0;0.22;0.25;0.47;0.5;1" repeatCount="indefinite" />
+        <rect x="0" y="0" width="480" height="36" rx="6" fill="#0b172a" stroke="#1c3a63" stroke-width="1" />
+        <text x="14" y="24" font-size="17" font-weight="700" fill="#f0f5ff">🚀 Full-Stack Web &amp; App Architect</text>
+      </g>
+      <!-- Role 3 -->
+      <g opacity="0">
+        <animate attributeName="opacity" begin="0s" dur="16s" values="0;0;1;1;0;0" keyTimes="0;0.47;0.5;0.72;0.75;1" repeatCount="indefinite" />
+        <rect x="0" y="0" width="480" height="36" rx="6" fill="#0b172a" stroke="#1c3a63" stroke-width="1" />
+        <text x="14" y="24" font-size="17" font-weight="700" fill="#f0f5ff">📱 Cross-Platform Mobile Engineer (Flutter)</text>
+      </g>
+      <!-- Role 4 -->
+      <g opacity="0">
+        <animate attributeName="opacity" begin="0s" dur="16s" values="0;0;1;1;0" keyTimes="0;0.72;0.75;0.97;1" repeatCount="indefinite" />
+        <rect x="0" y="0" width="480" height="36" rx="6" fill="#0b172a" stroke="#1c3a63" stroke-width="1" />
+        <text x="14" y="24" font-size="17" font-weight="700" fill="#f0f5ff">✨ UI/UX &amp; 60FPS Micro-Animations Crafter</text>
+      </g>
     </g>
 
-    <!-- Bio Statement -->
-    <text x="46" y="482" font-size="14" font-weight="400" fill="#9db6d8" class="mono">
+    <!-- Bio Statement (Separate lines, zero collision) -->
+    <text x="50" y="435" font-size="13" font-weight="400" fill="#9db6d8" class="mono">
       Building silky 3D interfaces, high-octane web apps, and
     </text>
-    <text x="46" y="504" font-size="14" font-weight="400" fill="#9db6d8" class="mono">
+    <text x="50" y="458" font-size="13" font-weight="400" fill="#9db6d8" class="mono">
       cross-platform mobile experiences with uncompromising detail.
     </text>
 
-    <!-- RIGHT SIDE: HOLOGRAPHIC DEVELOPER HUD CARD -->
-    <g transform="translate(760, 100)">
-      <!-- Cyber Frame -->
-      <rect x="0" y="0" width="380" height="430" rx="16" fill="#091222" stroke="url(#card-border)" stroke-width="2" />
+    <!-- ==================== RIGHT COLUMN: SLEEK CYBER CODE CONSOLE ==================== -->
+    <g transform="translate(680, 105)">
+      <!-- Console Frame -->
+      <rect x="0" y="0" width="460" height="400" rx="14" fill="#08101e" stroke="url(#card-border)" stroke-width="1.8" />
       
-      <!-- Corner Accents -->
-      <path d="M 0 30 L 0 0 L 30 0" stroke="#00f0ff" stroke-width="3" fill="none" />
-      <path d="M 350 0 L 380 0 L 380 30" stroke="#00f0ff" stroke-width="3" fill="none" />
-      <path d="M 380 400 L 380 430 L 350 430" stroke="#00f0ff" stroke-width="3" fill="none" />
-      <path d="M 30 430 L 0 430 L 0 400" stroke="#00f0ff" stroke-width="3" fill="none" />
-
-      <!-- Inner Glass Display Card -->
-      <rect x="18" y="18" width="344" height="290" rx="12" fill="#050a14" stroke="#162947" stroke-width="1.5" />
+      <!-- Top Titlebar -->
+      <rect x="0" y="0" width="460" height="38" rx="14" fill="#0d1b32" />
+      <circle cx="22" cy="19" r="5" fill="#ff3366" />
+      <circle cx="38" cy="19" r="5" fill="#f5a623" />
+      <circle cx="54" cy="19" r="5" fill="#00f0ff" />
       
-      <!-- Avatar Image from GitHub -->
-      <image href="https://avatars.githubusercontent.com/u/198222047?v=4" x="22" y="22" width="336" height="282" preserveAspectRatio="xMidYMid slice" opacity="0.92" rx="10" />
-      
-      <!-- Cyan Cyber Overlay Grid on Avatar -->
-      <rect x="22" y="22" width="336" height="282" rx="10" fill="url(#dot-grid)" opacity="0.3" />
-      <rect x="22" y="22" width="336" height="282" rx="10" fill="url(#glow-cyan)" opacity="0.4" />
+      <text x="76" y="23" font-size="11" font-weight="700" fill="#7194bf" class="mono">DEV_CONSOLE // GODLLUFFY.TS</text>
+      <text x="420" y="23" font-size="10" font-weight="700" fill="#00f0ff" class="mono">READY</text>
 
-      <!-- HUD Scanline -->
-      <line x1="22" y1="0" x2="358" y2="0" stroke="#00f0ff" stroke-width="2" opacity="0.75" class="scanline" />
+      <!-- Code Block Body -->
+      <g transform="translate(24, 60)">
+        <text x="0" y="18" font-size="12" fill="#5c7a9f" class="mono">01</text>
+        <text x="32" y="18" font-size="12" fill="#ff3366" class="mono">const</text>
+        <text x="75" y="18" font-size="12" fill="#00f0ff" class="mono">architect</text>
+        <text x="145" y="18" font-size="12" fill="#f0f5ff" class="mono">= {</text>
 
-      <!-- Floating Cyber Pill on Avatar -->
-      <rect x="36" y="36" width="130" height="24" rx="4" fill="#050c18" stroke="#00f0ff" stroke-width="1" opacity="0.9" />
-      <text x="46" y="52" font-size="10" font-weight="700" fill="#00f0ff" class="mono" letter-spacing="1">LIVE // DEV_READY</text>
+        <text x="0" y="44" font-size="12" fill="#5c7a9f" class="mono">02</text>
+        <text x="32" y="44" font-size="12" fill="#7d9ec4" class="mono">  name:</text>
+        <text x="95" y="44" font-size="12" fill="#88d49e" class="mono">&quot;Anup Gundelwar&quot;</text>
+        <text x="215" y="44" font-size="12" fill="#f0f5ff" class="mono">,</text>
 
-      <!-- Bottom Card Metadata -->
-      <rect x="18" y="322" width="344" height="90" rx="10" fill="#0d1b32" stroke="#1e3b63" stroke-width="1" />
-      
-      <circle cx="42" cy="350" r="14" fill="#142c4f" stroke="#247bff" stroke-width="1.5" />
-      <text x="36" y="355" font-size="13" font-weight="900" fill="#00f0ff">⚡</text>
+        <text x="0" y="70" font-size="12" fill="#5c7a9f" class="mono">03</text>
+        <text x="32" y="70" font-size="12" fill="#7d9ec4" class="mono">  alias:</text>
+        <text x="95" y="70" font-size="12" fill="#88d49e" class="mono">&quot;@GodlLuffy&quot;</text>
+        <text x="180" y="70" font-size="12" fill="#f0f5ff" class="mono">,</text>
 
-      <text x="66" y="347" font-size="15" font-weight="800" fill="#f0f5ff">ANUP SANTOSH G.</text>
-      <text x="66" y="363" font-size="11" font-weight="600" fill="#7d9ec4" class="mono">github.com/GodlLuffy</text>
+        <text x="0" y="96" font-size="12" fill="#5c7a9f" class="mono">04</text>
+        <text x="32" y="96" font-size="12" fill="#7d9ec4" class="mono">  core:</text>
+        <text x="85" y="96" font-size="12" fill="#f0f5ff" class="mono">[</text>
+        <text x="95" y="96" font-size="12" fill="#247bff" class="mono">&quot;3D WebGL&quot;</text>
+        <text x="175" y="96" font-size="12" fill="#f0f5ff" class="mono">, </text>
+        <text x="190" y="96" font-size="12" fill="#54c5f8" class="mono">&quot;Flutter&quot;</text>
+        <text x="255" y="96" font-size="12" fill="#f0f5ff" class="mono">, </text>
+        <text x="270" y="96" font-size="12" fill="#00f0ff" class="mono">&quot;React&quot;</text>
+        <text x="325" y="96" font-size="12" fill="#f0f5ff" class="mono">],</text>
 
-      <line x1="32" y1="378" x2="348" y2="378" stroke="#193356" stroke-width="1" />
+        <text x="0" y="122" font-size="12" fill="#5c7a9f" class="mono">05</text>
+        <text x="32" y="122" font-size="12" fill="#7d9ec4" class="mono">  focus:</text>
+        <text x="95" y="122" font-size="12" fill="#88d49e" class="mono">&quot;60FPS Micro-Animations&quot;</text>
+        <text x="285" y="122" font-size="12" fill="#f0f5ff" class="mono">,</text>
 
-      <text x="32" y="398" font-size="10" font-weight="600" fill="#00f0ff" class="mono" letter-spacing="1">3D EXPERIENCES</text>
-      <text x="145" y="398" font-size="10" font-weight="600" fill="#9db6d8" class="mono">·</text>
-      <text x="160" y="398" font-size="10" font-weight="600" fill="#f0f5ff" class="mono" letter-spacing="1">FLUTTER APPS</text>
-      <text x="265" y="398" font-size="10" font-weight="600" fill="#9db6d8" class="mono">·</text>
-      <text x="280" y="398" font-size="10" font-weight="600" fill="#ff3366" class="mono" letter-spacing="1">FULLSTACK</text>
+        <text x="0" y="148" font-size="12" fill="#5c7a9f" class="mono">06</text>
+        <text x="32" y="148" font-size="12" fill="#7d9ec4" class="mono">  repos:</text>
+        <text x="95" y="148" font-size="12" fill="#f5a623" class="mono">10</text>
+        <text x="115" y="148" font-size="12" fill="#7d9ec4" class="mono">+ active projects</text>
+        <text x="245" y="148" font-size="12" fill="#f0f5ff" class="mono">,</text>
+
+        <text x="0" y="174" font-size="12" fill="#5c7a9f" class="mono">07</text>
+        <text x="32" y="174" font-size="12" fill="#7d9ec4" class="mono">  status:</text>
+        <text x="95" y="174" font-size="12" fill="#88d49e" class="mono">&quot;Open to Collaborations&quot;</text>
+
+        <text x="0" y="200" font-size="12" fill="#5c7a9f" class="mono">08</text>
+        <text x="32" y="200" font-size="12" fill="#f0f5ff" class="mono">};</text>
+
+        <text x="0" y="235" font-size="12" fill="#5c7a9f" class="mono">09</text>
+        <text x="32" y="235" font-size="12" fill="#00f0ff" class="mono">architect</text>
+        <text x="102" y="235" font-size="12" fill="#f0f5ff" class="mono">.</text>
+        <text x="110" y="235" font-size="12" fill="#ffd43b" class="mono">buildNextGeneration</text>
+        <text x="250" y="235" font-size="12" fill="#f0f5ff" class="mono">();</text>
+        <rect x="270" y="222" width="8" height="14" fill="#00f0ff" class="cursor-blink" />
+      </g>
+
+      <!-- Bottom Mini Status -->
+      <rect x="18" y="325" width="424" height="52" rx="8" fill="#0b162a" stroke="#1a355c" stroke-width="1" />
+      <circle cx="36" cy="351" r="5" fill="#00f0ff" />
+      <text x="50" y="347" font-size="11" font-weight="700" fill="#f0f5ff">TERMINAL OUTPUT: READY</text>
+      <text x="50" y="363" font-size="10" font-weight="500" fill="#688ab5" class="mono">Compiled without errors · 60FPS render loop</text>
     </g>
 
-    <!-- BOTTOM HUD STATUS BAR -->
+    <!-- ==================== BOTTOM HUD STATUS BAR ==================== -->
     <path d="M40 550 L1160 550" stroke="#192d49" stroke-width="1.5" />
 
-    <!-- Stat Pills -->
-    <g transform="translate(44, 576)">
-      <!-- Location -->
-      <circle cx="10" cy="8" r="4" fill="#247bff" />
-      <text x="24" y="12" font-size="12" font-weight="600" fill="#9db6d8" class="mono">INDIA</text>
+    <!-- Stat Pills with Ample Spacing -->
+    <g transform="translate(50, 574)">
+      <circle cx="6" cy="10" r="4" fill="#247bff" />
+      <text x="18" y="14" font-size="11" font-weight="600" fill="#9db6d8" class="mono">INDIA</text>
 
-      <!-- Repos -->
-      <g transform="translate(140, 0)">
-        <rect x="0" y="-4" width="85" height="24" rx="4" fill="#0d1b32" stroke="#1c3a63" stroke-width="1" />
-        <text x="10" y="12" font-size="11" font-weight="700" fill="#00f0ff" class="mono">10+ REPOS</text>
+      <g transform="translate(120, 0)">
+        <rect x="0" y="-3" width="95" height="24" rx="4" fill="#0d1b32" stroke="#1c3a63" stroke-width="1" />
+        <text x="10" y="13" font-size="10" font-weight="700" fill="#00f0ff" class="mono">10+ REPOSITORIES</text>
       </g>
 
-      <!-- Focus -->
-      <g transform="translate(250, 0)">
-        <rect x="0" y="-4" width="125" height="24" rx="4" fill="#0d1b32" stroke="#1c3a63" stroke-width="1" />
-        <text x="10" y="12" font-size="11" font-weight="700" fill="#7db5ff" class="mono">JS / FLUTTER / 3D</text>
+      <g transform="translate(235, 0)">
+        <rect x="0" y="-3" width="130" height="24" rx="4" fill="#0d1b32" stroke="#1c3a63" stroke-width="1" />
+        <text x="10" y="13" font-size="10" font-weight="700" fill="#7db5ff" class="mono">JS / FLUTTER / 3D</text>
       </g>
 
-      <!-- Tag -->
-      <g transform="translate(400, 0)">
-        <text x="0" y="12" font-size="11" font-weight="600" fill="#ff3366" class="mono">&gt; SPECIALIZING IN HIGH PERFORMANCE INTERACTION</text>
+      <g transform="translate(385, 0)">
+        <text x="0" y="14" font-size="11" font-weight="600" fill="#ff3366" class="mono">&gt; SPECIALIZING IN 60FPS UI INTERACTION</text>
+      </g>
+
+      <g transform="translate(930, 0)">
+        <text x="0" y="14" font-size="11" font-weight="700" fill="#527096" class="mono" letter-spacing="1">PROFILE V4.3</text>
       </g>
     </g>
-
-    <!-- Version Counter -->
-    <text x="960" y="588" font-size="11" font-weight="700" fill="#527096" class="mono" letter-spacing="1.5">01 / REDLINE PROFILE V4.2</text>
 
     <!-- Outer Border Glow -->
     <rect x="1" y="1" width="1198" height="638" rx="19" fill="none" stroke="url(#card-border)" stroke-width="2" />

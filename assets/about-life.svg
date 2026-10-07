@@ -28,7 +28,7 @@
     </radialGradient>
 
     <radialGradient id="halo-red" cx="80%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#ff3366" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#ff3366" stop-opacity="0.1" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
@@ -50,168 +50,175 @@
 
     <!-- TOP SECTION DIVIDER -->
     <path d="M40 70 L1160 70" stroke="#1b2e4b" stroke-width="1.5" />
-    <text x="44" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">02 // ARCHITECTURAL PHILOSOPHY &amp; CORE VISION</text>
+    <text x="50" y="46" font-size="11" font-weight="700" fill="#7d95b7" class="mono" letter-spacing="2">02 // ARCHITECTURAL PHILOSOPHY &amp; CORE VISION</text>
     <text x="1000" y="46" font-size="11" font-weight="700" fill="#ff3366" class="mono" letter-spacing="1.5">[ DISCIPLINE &amp; CRAFT ]</text>
 
     <!-- LEFT COLUMN: IDEAS. BUILT DIFFERENT. -->
-    <g transform="translate(44, 90)">
-      <text x="0" y="32" font-size="34" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">IDEAS. BUILT DIFFERENT.</text>
-      <text x="0" y="58" font-size="13" font-weight="400" fill="#88a5cc" class="mono">Engineered with high performance, elegant math, and obsessive polish.</text>
+    <g transform="translate(50, 95)">
+      <text x="0" y="30" font-size="30" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">IDEAS. BUILT DIFFERENT.</text>
+      <text x="0" y="54" font-size="12" font-weight="400" fill="#88a5cc" class="mono">High performance, clean math, and pixel precision.</text>
 
       <!-- Card 1: Modern Web & 3D UIs -->
-      <g transform="translate(0, 85)">
-        <rect x="0" y="0" width="520" height="110" rx="12" fill="#091222" stroke="#1d385f" stroke-width="1.2" />
+      <g transform="translate(0, 75)">
+        <rect x="0" y="0" width="510" height="115" rx="12" fill="#091222" stroke="#1d385f" stroke-width="1.2" />
         <rect x="16" y="16" width="36" height="36" rx="8" fill="#112542" stroke="#247bff" stroke-width="1" />
-        <text x="25" y="40" font-size="18" font-weight="900" fill="#00f0ff">01</text>
-        <text x="68" y="34" font-size="18" font-weight="800" fill="#f0f5ff">Modern Web &amp; 3D Interactions</text>
-        <text x="68" y="52" font-size="11" font-weight="700" fill="#ff3366" class="mono">THREE.JS · WEBGL · JAVASCRIPT</text>
-        <text x="68" y="78" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
-          Pushing web canvases beyond flat layouts into responsive 3D environments.
+        <text x="25" y="40" font-size="17" font-weight="900" fill="#00f0ff">01</text>
+        <text x="66" y="34" font-size="17" font-weight="800" fill="#f0f5ff">Modern Web &amp; 3D Interactions</text>
+        <text x="66" y="52" font-size="10" font-weight="700" fill="#ff3366" class="mono">THREE.JS · WEBGL · JAVASCRIPT</text>
+        <text x="66" y="74" font-size="11" font-weight="400" fill="#88a5cc" class="mono">
+          Transforming standard web layouts into responsive
         </text>
-        <circle cx="496" cy="28" r="4" fill="#00f0ff" />
+        <text x="66" y="92" font-size="11" font-weight="400" fill="#88a5cc" class="mono">
+          3D environments with hardware-accelerated physics.
+        </text>
+        <circle cx="486" cy="26" r="4" fill="#00f0ff" />
       </g>
 
       <!-- Card 2: Cross-Platform & Mobile -->
-      <g transform="translate(0, 212)">
-        <rect x="0" y="0" width="520" height="110" rx="12" fill="#091222" stroke="#1d385f" stroke-width="1.2" />
+      <g transform="translate(0, 205)">
+        <rect x="0" y="0" width="510" height="115" rx="12" fill="#091222" stroke="#1d385f" stroke-width="1.2" />
         <rect x="16" y="16" width="36" height="36" rx="8" fill="#112542" stroke="#247bff" stroke-width="1" />
-        <text x="25" y="40" font-size="18" font-weight="900" fill="#00f0ff">02</text>
-        <text x="68" y="34" font-size="18" font-weight="800" fill="#f0f5ff">Cross-Platform &amp; Flutter Mobile</text>
-        <text x="68" y="52" font-size="11" font-weight="700" fill="#247bff" class="mono">FLUTTER · DART · CLEAN ARCHITECTURE</text>
-        <text x="68" y="78" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
-          Native 60FPS fluid performance with robust state management and offline-first logic.
+        <text x="25" y="40" font-size="17" font-weight="900" fill="#00f0ff">02</text>
+        <text x="66" y="34" font-size="17" font-weight="800" fill="#f0f5ff">Cross-Platform Flutter Mobile</text>
+        <text x="66" y="52" font-size="10" font-weight="700" fill="#247bff" class="mono">FLUTTER · DART · CLEAN ARCHITECTURE</text>
+        <text x="66" y="74" font-size="11" font-weight="400" fill="#88a5cc" class="mono">
+          Native 60FPS fluid touch response with modular
         </text>
-        <circle cx="496" cy="28" r="4" fill="#247bff" />
+        <text x="66" y="92" font-size="11" font-weight="400" fill="#88a5cc" class="mono">
+          state management and robust offline-first architecture.
+        </text>
+        <circle cx="486" cy="26" r="4" fill="#247bff" />
       </g>
 
       <!-- Card 3: Full-Stack & Systems -->
-      <g transform="translate(0, 339)">
-        <rect x="0" y="0" width="520" height="110" rx="12" fill="#091222" stroke="#1d385f" stroke-width="1.2" />
+      <g transform="translate(0, 335)">
+        <rect x="0" y="0" width="510" height="115" rx="12" fill="#091222" stroke="#1d385f" stroke-width="1.2" />
         <rect x="16" y="16" width="36" height="36" rx="8" fill="#112542" stroke="#247bff" stroke-width="1" />
-        <text x="25" y="40" font-size="18" font-weight="900" fill="#00f0ff">03</text>
-        <text x="68" y="34" font-size="18" font-weight="800" fill="#f0f5ff">Full-Stack Architecture &amp; Microservices</text>
-        <text x="68" y="52" font-size="11" font-weight="700" fill="#00f0ff" class="mono">NODE.JS · EXPRESS · APIS · CLOUD</text>
-        <text x="68" y="78" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
-          Designing scalable REST APIs and clean modular code engineered to handle scale.
+        <text x="25" y="40" font-size="17" font-weight="900" fill="#00f0ff">03</text>
+        <text x="66" y="34" font-size="17" font-weight="800" fill="#f0f5ff">Full-Stack &amp; Scalable Systems</text>
+        <text x="66" y="52" font-size="10" font-weight="700" fill="#00f0ff" class="mono">NODE.JS · EXPRESS · APIS · CLOUD</text>
+        <text x="66" y="74" font-size="11" font-weight="400" fill="#88a5cc" class="mono">
+          Engineering high-speed RESTful services, clean contracts,
         </text>
-        <circle cx="496" cy="28" r="4" fill="#ff3366" />
+        <text x="66" y="92" font-size="11" font-weight="400" fill="#88a5cc" class="mono">
+          and modular code designed to handle real scale.
+        </text>
+        <circle cx="486" cy="26" r="4" fill="#ff3366" />
       </g>
     </g>
 
-    <!-- RIGHT COLUMN: MORE THAN A JOB TITLE (ANIMATED ROTATING CAROUSEL) -->
-    <g transform="translate(620, 90)">
-      <text x="0" y="32" font-size="34" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">MORE THAN A JOB TITLE.</text>
-      <text x="0" y="58" font-size="13" font-weight="400" fill="#88a5cc" class="mono">Driven by craft, pixel precision, and relentless engineering curiosity.</text>
+    <!-- RIGHT COLUMN: MORE THAN A JOB TITLE (ANIMATED CAROUSEL) -->
+    <g transform="translate(610, 95)">
+      <text x="0" y="30" font-size="30" font-weight="900" fill="#f0f5ff" letter-spacing="0.5">MORE THAN A JOB TITLE.</text>
+      <text x="0" y="54" font-size="12" font-weight="400" fill="#88a5cc" class="mono">Driven by craft, tactile polish, and engineering curiosity.</text>
 
       <!-- Outer Carousel Frame -->
-      <g transform="translate(0, 85)">
-        <rect x="0" y="0" width="536" height="364" rx="16" fill="#08101e" stroke="url(#card-border-grad)" stroke-width="1.5" />
+      <g transform="translate(0, 75)">
+        <rect x="0" y="0" width="540" height="375" rx="16" fill="#08101e" stroke="url(#card-border-grad)" stroke-width="1.5" />
 
         <!-- SLIDE 1: 3D & Creative Engineering -->
         <g opacity="1">
           <animate attributeName="opacity" begin="0s" dur="15s" values="1;1;0;0;1" keyTimes="0;0.29;0.33;0.96;1" repeatCount="indefinite" />
           
-          <rect x="24" y="24" width="488" height="180" rx="12" fill="#0d1b32" stroke="#1f406b" stroke-width="1" />
+          <rect x="20" y="20" width="500" height="185" rx="12" fill="#0d1b32" stroke="#1f406b" stroke-width="1" />
           
-          <!-- Cyber HUD Window -->
-          <circle cx="46" cy="46" r="5" fill="#ff3366" />
-          <circle cx="62" cy="46" r="5" fill="#f5a623" />
-          <circle cx="78" cy="46" r="5" fill="#00f0ff" />
-          <text x="100" y="50" font-size="11" font-weight="700" fill="#7192ba" class="mono">canvas.3d.render() // WEBGL</text>
+          <!-- Cyber HUD Window Header -->
+          <circle cx="40" cy="40" r="5" fill="#ff3366" />
+          <circle cx="56" cy="40" r="5" fill="#f5a623" />
+          <circle cx="72" cy="40" r="5" fill="#00f0ff" />
+          <text x="94" y="44" font-size="11" font-weight="700" fill="#7192ba" class="mono">canvas.3d.render() // WEBGL</text>
 
           <!-- 3D Geometric Cube / Wireframe Illustration in SVG -->
-          <g transform="translate(260, 110)">
-            <!-- Isometric Cube Faces -->
-            <polygon points="0,-40 35,-20 0,0 -35,-20" fill="#1b365d" stroke="#00f0ff" stroke-width="1.5" />
-            <polygon points="-35,-20 0,0 0,40 -35,20" fill="#132742" stroke="#247bff" stroke-width="1.5" />
-            <polygon points="35,-20 0,0 0,40 35,20" fill="#0e1f36" stroke="#247bff" stroke-width="1.5" />
-            <!-- Orbit circle -->
-            <circle cx="0" cy="0" r="55" fill="none" stroke="#ff3366" stroke-dasharray="6 6" stroke-width="1.2" />
+          <g transform="translate(340, 110)">
+            <polygon points="0,-36 32,-18 0,0 -32,-18" fill="#1b365d" stroke="#00f0ff" stroke-width="1.5" />
+            <polygon points="-32,-18 0,0 0,36 -32,18" fill="#132742" stroke="#247bff" stroke-width="1.5" />
+            <polygon points="32,-18 0,0 0,36 32,18" fill="#0e1f36" stroke="#247bff" stroke-width="1.5" />
+            <circle cx="0" cy="0" r="48" fill="none" stroke="#ff3366" stroke-dasharray="6 6" stroke-width="1.2" />
           </g>
 
-          <text x="46" y="100" font-size="12" font-weight="700" fill="#00f0ff" class="mono">&gt; FPS_TARGET: 60.0</text>
-          <text x="46" y="125" font-size="12" font-weight="600" fill="#d2e3f8" class="mono">&gt; SHADER: VERTEX+FRAG</text>
-          <text x="46" y="150" font-size="12" font-weight="600" fill="#7d9ec4" class="mono">&gt; STATUS: ACCELERATED</text>
+          <text x="40" y="92" font-size="12" font-weight="700" fill="#00f0ff" class="mono">&gt; FPS_TARGET: 60.0</text>
+          <text x="40" y="118" font-size="12" font-weight="600" fill="#d2e3f8" class="mono">&gt; SHADER: VERTEX+FRAG</text>
+          <text x="40" y="144" font-size="12" font-weight="600" fill="#7d9ec4" class="mono">&gt; STATUS: ACCELERATED</text>
 
           <!-- Slide Content Bottom -->
-          <text x="24" y="240" font-size="11" font-weight="700" fill="#ff3366" class="mono" letter-spacing="1.5">EXPERIENCE 01 // INTERACTIVE WORLDS</text>
-          <text x="24" y="274" font-size="24" font-weight="800" fill="#f0f5ff">3D Web &amp; Creative Physics</text>
-          <text x="24" y="300" font-size="13" font-weight="400" fill="#88a5cc" class="mono">
-            Transforming standard user interfaces into memorable interactive art.
+          <text x="24" y="238" font-size="11" font-weight="700" fill="#ff3366" class="mono" letter-spacing="1.5">EXPERIENCE 01 // INTERACTIVE WORLDS</text>
+          <text x="24" y="270" font-size="22" font-weight="800" fill="#f0f5ff">3D Web &amp; Creative Physics</text>
+          <text x="24" y="296" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+            Elevating static screens into dynamic interactive experiences.
           </text>
-          <text x="24" y="336" font-size="11" font-weight="700" fill="#4d6f99" class="mono">01 / 03 · EXPLORE PROJECTS</text>
-          <text x="470" y="336" font-size="18" fill="#00f0ff">→</text>
+          <text x="24" y="336" font-size="11" font-weight="700" fill="#4d6f99" class="mono">01 / 03 · THREE.JS &amp; WEBGL</text>
+          <text x="480" y="336" font-size="18" fill="#00f0ff">→</text>
         </g>
 
         <!-- SLIDE 2: Flutter & Mobile Mastery -->
         <g opacity="0">
           <animate attributeName="opacity" begin="0s" dur="15s" values="0;0;1;1;0;0" keyTimes="0;0.29;0.33;0.62;0.66;1" repeatCount="indefinite" />
           
-          <rect x="24" y="24" width="488" height="180" rx="12" fill="#0d1b32" stroke="#1f406b" stroke-width="1" />
+          <rect x="20" y="20" width="500" height="185" rx="12" fill="#0d1b32" stroke="#1f406b" stroke-width="1" />
           
-          <circle cx="46" cy="46" r="5" fill="#ff3366" />
-          <circle cx="62" cy="46" r="5" fill="#f5a623" />
-          <circle cx="78" cy="46" r="5" fill="#00f0ff" />
-          <text x="100" y="50" font-size="11" font-weight="700" fill="#7192ba" class="mono">flutter.build(target: android_ios)</text>
+          <circle cx="40" cy="40" r="5" fill="#ff3366" />
+          <circle cx="56" cy="40" r="5" fill="#f5a623" />
+          <circle cx="72" cy="40" r="5" fill="#00f0ff" />
+          <text x="94" y="44" font-size="11" font-weight="700" fill="#7192ba" class="mono">flutter.build(target: android_ios)</text>
 
           <!-- Phone mockup wireframe in SVG -->
-          <g transform="translate(250, 60)">
-            <rect x="0" y="0" width="75" height="130" rx="10" fill="#0a1322" stroke="#00f0ff" stroke-width="1.5" />
-            <line x1="25" y1="8" x2="50" y2="8" stroke="#1f406b" stroke-width="2" />
-            <rect x="10" y="20" width="55" height="25" rx="4" fill="#1a355c" />
-            <rect x="10" y="52" width="25" height="20" rx="3" fill="#247bff" />
-            <rect x="40" y="52" width="25" height="20" rx="3" fill="#ff3366" />
-            <rect x="10" y="80" width="55" height="35" rx="4" fill="#112542" />
+          <g transform="translate(340, 55)">
+            <rect x="0" y="0" width="70" height="120" rx="10" fill="#0a1322" stroke="#00f0ff" stroke-width="1.5" />
+            <line x1="22" y1="8" x2="48" y2="8" stroke="#1f406b" stroke-width="2" />
+            <rect x="8" y="18" width="54" height="22" rx="4" fill="#1a355c" />
+            <rect x="8" y="46" width="24" height="18" rx="3" fill="#247bff" />
+            <rect x="38" y="46" width="24" height="18" rx="3" fill="#ff3366" />
+            <rect x="8" y="70" width="54" height="35" rx="4" fill="#112542" />
           </g>
 
-          <text x="46" y="100" font-size="12" font-weight="700" fill="#247bff" class="mono">&gt; DART_ENGINE: HOT_RELOAD</text>
-          <text x="46" y="125" font-size="12" font-weight="600" fill="#d2e3f8" class="mono">&gt; APP: SHOPKEEPER</text>
-          <text x="46" y="150" font-size="12" font-weight="600" fill="#7d9ec4" class="mono">&gt; PERFORMANCE: 60FPS STABLE</text>
+          <text x="40" y="92" font-size="12" font-weight="700" fill="#247bff" class="mono">&gt; DART_ENGINE: HOT_RELOAD</text>
+          <text x="40" y="118" font-size="12" font-weight="600" fill="#d2e3f8" class="mono">&gt; APP: SHOPKEEPER</text>
+          <text x="40" y="144" font-size="12" font-weight="600" fill="#7d9ec4" class="mono">&gt; PERFORMANCE: 60FPS STABLE</text>
 
-          <text x="24" y="240" font-size="11" font-weight="700" fill="#247bff" class="mono" letter-spacing="1.5">EXPERIENCE 02 // MOBILE CRAFTSMANSHIP</text>
-          <text x="24" y="274" font-size="24" font-weight="800" fill="#f0f5ff">Flutter &amp; Cross-Platform Apps</text>
-          <text x="24" y="300" font-size="13" font-weight="400" fill="#88a5cc" class="mono">
-            Clean MVVM architectures, seamless state sync, and native touch response.
+          <text x="24" y="238" font-size="11" font-weight="700" fill="#247bff" class="mono" letter-spacing="1.5">EXPERIENCE 02 // MOBILE CRAFTSMANSHIP</text>
+          <text x="24" y="270" font-size="22" font-weight="800" fill="#f0f5ff">Flutter &amp; Cross-Platform Apps</text>
+          <text x="24" y="296" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+            Clean architectures and seamless touch interaction across platforms.
           </text>
           <text x="24" y="336" font-size="11" font-weight="700" fill="#4d6f99" class="mono">02 / 03 · FLUTTER / DART</text>
-          <text x="470" y="336" font-size="18" fill="#247bff">→</text>
+          <text x="480" y="336" font-size="18" fill="#247bff">→</text>
         </g>
 
         <!-- SLIDE 3: NOIR Minimalist Design & Systems -->
         <g opacity="0">
           <animate attributeName="opacity" begin="0s" dur="15s" values="0;0;1;1;0" keyTimes="0;0.62;0.66;0.96;1" repeatCount="indefinite" />
           
-          <rect x="24" y="24" width="488" height="180" rx="12" fill="#0d1b32" stroke="#1f406b" stroke-width="1" />
+          <rect x="20" y="20" width="500" height="185" rx="12" fill="#0d1b32" stroke="#1f406b" stroke-width="1" />
           
-          <circle cx="46" cy="46" r="5" fill="#ff3366" />
-          <circle cx="62" cy="46" r="5" fill="#f5a623" />
-          <circle cx="78" cy="46" r="5" fill="#00f0ff" />
-          <text x="100" y="50" font-size="11" font-weight="700" fill="#7192ba" class="mono">noir.theme(dark_cyber_obsidian)</text>
+          <circle cx="40" cy="40" r="5" fill="#ff3366" />
+          <circle cx="56" cy="40" r="5" fill="#f5a623" />
+          <circle cx="72" cy="40" r="5" fill="#00f0ff" />
+          <text x="94" y="44" font-size="11" font-weight="700" fill="#7192ba" class="mono">noir.theme(dark_cyber_obsidian)</text>
 
-          <g transform="translate(250, 70)">
-            <rect x="0" y="0" width="120" height="80" rx="8" fill="#060c16" stroke="#ff3366" stroke-width="1.5" />
-            <text x="18" y="48" font-size="28" font-weight="900" fill="#f0f5ff" letter-spacing="4">NOIR</text>
-            <circle cx="100" cy="20" r="4" fill="#00f0ff" />
+          <g transform="translate(330, 75)">
+            <rect x="0" y="0" width="110" height="70" rx="8" fill="#060c16" stroke="#ff3366" stroke-width="1.5" />
+            <text x="16" y="44" font-size="24" font-weight="900" fill="#f0f5ff" letter-spacing="4">NOIR</text>
+            <circle cx="90" cy="18" r="4" fill="#00f0ff" />
           </g>
 
-          <text x="46" y="100" font-size="12" font-weight="700" fill="#ff3366" class="mono">&gt; PALETTE: HIGH_CONTRAST</text>
-          <text x="46" y="125" font-size="12" font-weight="600" fill="#d2e3f8" class="mono">&gt; SYSTEM: NOIR_V2</text>
-          <text x="46" y="150" font-size="12" font-weight="600" fill="#7d9ec4" class="mono">&gt; UX_SCORE: OPTIMAL</text>
+          <text x="40" y="92" font-size="12" font-weight="700" fill="#ff3366" class="mono">&gt; PALETTE: HIGH_CONTRAST</text>
+          <text x="40" y="118" font-size="12" font-weight="600" fill="#d2e3f8" class="mono">&gt; SYSTEM: NOIR_V2</text>
+          <text x="40" y="144" font-size="12" font-weight="600" fill="#7d9ec4" class="mono">&gt; UX_SCORE: OPTIMAL</text>
 
-          <text x="24" y="240" font-size="11" font-weight="700" fill="#00f0ff" class="mono" letter-spacing="1.5">EXPERIENCE 03 // OBSIDIAN DESIGN SYSTEMS</text>
-          <text x="24" y="274" font-size="24" font-weight="800" fill="#f0f5ff">Sleek Cyber UI/UX Precision</text>
-          <text x="24" y="300" font-size="13" font-weight="400" fill="#88a5cc" class="mono">
-            Obsessive focus on visual hierarchy, typography, and friction-free usability.
+          <text x="24" y="238" font-size="11" font-weight="700" fill="#00f0ff" class="mono" letter-spacing="1.5">EXPERIENCE 03 // OBSIDIAN DESIGN SYSTEMS</text>
+          <text x="24" y="270" font-size="22" font-weight="800" fill="#f0f5ff">Sleek Cyber UI/UX Precision</text>
+          <text x="24" y="296" font-size="12" font-weight="400" fill="#88a5cc" class="mono">
+            Obsessive focus on visual hierarchy, typography, and clean layouts.
           </text>
           <text x="24" y="336" font-size="11" font-weight="700" fill="#4d6f99" class="mono">03 / 03 · NOIR DESIGN</text>
-          <text x="470" y="336" font-size="18" fill="#ff3366">→</text>
+          <text x="480" y="336" font-size="18" fill="#ff3366">→</text>
         </g>
       </g>
     </g>
 
     <!-- BOTTOM PROGRESS LINE -->
     <path d="M40 590 L1160 590" stroke="#192d49" stroke-width="1" />
-    <text x="44" y="620" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">ARCHITECTURE · PERFORMANCE · SCALABILITY · USER EXPERIENCE</text>
+    <text x="50" y="620" font-size="11" font-weight="600" fill="#5c7a9f" class="mono">ARCHITECTURE · PERFORMANCE · SCALABILITY · USER EXPERIENCE</text>
     <text x="1030" y="620" font-size="11" font-weight="700" fill="#247bff" class="mono">CYCLE_RATE: 15s</text>
 
     <!-- Border stroke -->
